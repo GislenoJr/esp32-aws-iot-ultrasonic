@@ -1,0 +1,31 @@
+# Build
+build/
+sdkconfig
+sdkconfig.old
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# IDE
+.idea/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Certificados
+main/certs/aws-root-ca.pem
+main/certs/certificate.pem.crt  
+main/certs/private.pem.key
+
+# Backup dos certificados 
+main/certs/*.backup
+main/certs/*.old
+
+# Arquivos temporários
+*.tmp
+*.temp
