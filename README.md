@@ -10,14 +10,14 @@ Projeto desenvolvido para a disciplina de Sistemas Embarcados que integra um ESP
 - Conexão segura com certificados TLS
 
 ## Estrutura do Projeto
-MQTT_AWS/
-main/
-main/certs/
-main/main.c
-main/CMakeLists.txt
-CMakeLists.txt
-README.md
-.gitignore
+|-- main/
+|   |-- certs/          # Certificados AWS (nao versionado)
+|   |-- main.c          # Codigo principal
+|   |-- CMakeLists.txt
+|-- CMakeLists.txt
+|-- README.md
+|-- .gitignore
+
 ## Tópicos MQTT
 - `esp32-ultrassonico/sensor`: Dados do sensor (ESP32 → AWS)
 - `esp32-ultrassonico/control`: Comandos LED (AWS → ESP32)
