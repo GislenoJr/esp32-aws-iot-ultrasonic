@@ -9,15 +9,6 @@ Projeto desenvolvido para a disciplina de Sistemas Embarcados que integra um ESP
 - Controle remoto de LED via MQTT
 - Conexão segura com certificados TLS
 
-## Estrutura do Projeto
-|-- main/
-|   |-- certs/          # Certificados AWS (nao versionado)
-|   |-- main.c          # Codigo principal
-|   |-- CMakeLists.txt
-|-- CMakeLists.txt
-|-- README.md
-|-- .gitignore
-
 ## Tópicos MQTT
 - `esp32-ultrassonico/sensor`: Dados do sensor (ESP32 → AWS)
 - `esp32-ultrassonico/control`: Comandos LED (AWS → ESP32)
