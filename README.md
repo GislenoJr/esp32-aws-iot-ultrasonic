@@ -11,13 +11,13 @@ Projeto desenvolvido para a disciplina de Sistemas Embarcados que integra um ESP
 
 ## Estrutura do Projeto
 MQTT_AWS/
-|── main/
-│ ── certs/ # Certificados AWS (não versionado)
-│ ── main.c # Código principal
-│ |── CMakeLists.txt
-|── CMakeLists.txt
-|── README.md
-  |── .gitignore
+├── main/
+│   ├── certs/                 # Certificados AWS (não versionado)
+│   ├── main.c                 # Código principal
+│   └── CMakeLists.txt
+├── CMakeLists.txt
+├── README.md
+└── .gitignore
 
 ## Tópicos MQTT
 - `esp32-ultrassonico/sensor`: Dados do sensor (ESP32 → AWS)
