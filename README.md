@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # Projeto ESP32 com AWS IoT Core - Sensor Ultrassônico
 
 ## Descrição
