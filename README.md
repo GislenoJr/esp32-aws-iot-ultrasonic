@@ -1,3 +1,4 @@
+cat > README.md << 'EOF'
 # Projeto ESP32 com AWS IoT Core - Sensor Ultrassônico
 
 ## Descrição
@@ -9,18 +10,8 @@ Projeto desenvolvido para a disciplina de Sistemas Embarcados que integra um ESP
 - Controle remoto de LED via MQTT
 - Conexão segura com certificados TLS
 
-cat > README.md << 'EOF'
-# Projeto ESP32 com AWS IoT Core - Sensor Ultrassônico
-
-## Descrição
-Projeto ESP32 com sensor ultrassônico HC-SR04 conectado à AWS IoT Core.
-
-## Funcionalidades
-- Leitura de distância com sensor ultrassônico
-- Transmissão de dados para AWS IoT Core
-- Controle remoto de LED via MQTT
-
 ## Estrutura do Projeto
+```
 MQTT_AWS/
 ├── main/
 │   ├── certs/
@@ -29,6 +20,7 @@ MQTT_AWS/
 ├── CMakeLists.txt
 ├── README.md
 └── .gitignore
+```
 
 ## Tópicos MQTT
 - esp32-ultrassonico/sensor: Dados do sensor
@@ -68,6 +60,7 @@ MQTT_AWS/
     }
   ]
 }
+```
 
 ## Tópicos MQTT
 - `esp32-ultrassonico/sensor`: Dados do sensor (ESP32 → AWS)
@@ -95,10 +88,18 @@ MQTT_AWS/
 3. Compilar com `idf.py build`
 4. Flashear com `idf.py flash`
 
+## Compilação e Execução
+```bash
+idf.py build
+idf.py flash
+idf.py monitor
+```
+
 ## Desenvolvedores
-- Gisleno Júnior - 511938
-- Calebe Sucupira - 540209
-- Josue Sucupira - 540630
+- Gisleno Júnior - 511938  
+- Calebe Sucupira - 540209  
+- Josué Sucupira - 540630  
 
 ## Disciplina
 Sistemas Embarcados
+EOF
